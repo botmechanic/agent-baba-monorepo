@@ -56,7 +56,7 @@ Agent BABA represents a breakthrough in autonomous trading by combining cutting-
 
 ## 🏗️ Architecture
 
-\`\`\`mermaid
+```mermaid
 flowchart TB
     subgraph On-Chain
         MP[Meteora Pool] <--> SA[Solana Agent Kit]
@@ -84,28 +84,28 @@ flowchart TB
     style Agent BABA Core fill:#f9f,stroke:#333,stroke-width:2px
     style On-Chain fill:#bbf,stroke:#333,stroke-width:2px
     style Analysis Flow fill:#bfb,stroke:#333,stroke-width:2px
-\`\`\`
+```
 
 ## 🚀 Quick Start
 
 1. **Clone & Install**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/agent-baba.git
    cd agent-baba
    bun install
-   \`\`\`
+   ```
 
 2. **Configure Environment**
-   \`\`\`bash
+   ```bash
    cp .env.example .env
    # Add your API keys and configuration
-   \`\`\`
+   ```
 
 3. **Start Services**
-   \`\`\`bash
+   ```bash
    docker-compose up -d        # Start database & vector store
    bun run dev                 # Start development servers
-   \`\`\`
+   ```
 
 4. **Open Dashboard**
    - Core Service: http://localhost:3000
@@ -113,7 +113,7 @@ flowchart TB
 
 ## 🔧 Project Structure
 
-\`\`\`
+```
 agent-baba/
 ├── packages/
 │   ├── core/              # Trading engine & services
@@ -121,7 +121,7 @@ agent-baba/
 │   └── types/            # Shared TypeScript types
 ├── package.json          # Monorepo configuration
 └── turbo.json           # Turborepo config
-\`\`\`
+```
 
 ## 🌅 Future Vision
 
